@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{3DF0C631-1A52-4486-9039-22853CAC0888}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailValidationService.Domain", "EmailValidationService.Domain\EmailValidationService.Domain.csproj", "{36A6A140-A566-4FBE-93F7-0B87F867730D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{B2C5521D-ED72-4670-95EE-AD2EEF0C1B39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailValidationService.Infrastructure", "EmailValidationService.Infrastructure\EmailValidationService.Infrastructure.csproj", "{273ACC1B-7D4D-4160-ABC8-64E0F4BAE51C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{E8A6E6ED-05B6-4186-8C2A-885D31BE7E18}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailValidationService.Application", "EmailValidationService.Application\EmailValidationService.Application.csproj", "{04E359EB-FCE7-4FD3-8654-CE4BB04553F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{E36F9019-A2D6-4BFC-986D-1222283E5F1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailValidationService.Api", "EmailValidationService.Api\EmailValidationService.Api.csproj", "{3D9C6838-F547-4528-A218-11C8A6BDA26B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{36A6A140-A566-4FBE-93F7-0B87F867730D} = {3DF0C631-1A52-4486-9039-22853CAC0888}
+		{273ACC1B-7D4D-4160-ABC8-64E0F4BAE51C} = {B2C5521D-ED72-4670-95EE-AD2EEF0C1B39}
+		{04E359EB-FCE7-4FD3-8654-CE4BB04553F9} = {E8A6E6ED-05B6-4186-8C2A-885D31BE7E18}
+		{3D9C6838-F547-4528-A218-11C8A6BDA26B} = {E36F9019-A2D6-4BFC-986D-1222283E5F1F}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36A6A140-A566-4FBE-93F7-0B87F867730D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A6A140-A566-4FBE-93F7-0B87F867730D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A6A140-A566-4FBE-93F7-0B87F867730D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A6A140-A566-4FBE-93F7-0B87F867730D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{273ACC1B-7D4D-4160-ABC8-64E0F4BAE51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{273ACC1B-7D4D-4160-ABC8-64E0F4BAE51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{273ACC1B-7D4D-4160-ABC8-64E0F4BAE51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{273ACC1B-7D4D-4160-ABC8-64E0F4BAE51C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04E359EB-FCE7-4FD3-8654-CE4BB04553F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04E359EB-FCE7-4FD3-8654-CE4BB04553F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04E359EB-FCE7-4FD3-8654-CE4BB04553F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04E359EB-FCE7-4FD3-8654-CE4BB04553F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D9C6838-F547-4528-A218-11C8A6BDA26B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D9C6838-F547-4528-A218-11C8A6BDA26B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D9C6838-F547-4528-A218-11C8A6BDA26B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D9C6838-F547-4528-A218-11C8A6BDA26B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
