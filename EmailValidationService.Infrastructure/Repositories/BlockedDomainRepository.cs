@@ -1,4 +1,5 @@
 ﻿using EmailValidationService.Application.Interfaces;
+using EmailValidationService.Domain.Entities;
 using EmailValidationService.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,5 +20,14 @@ public class BlockedDomainRepository : IBlockedDomainRepository
             .AsNoTracking()
             .Select(b => b.DomainName)
             .ToListAsync(cancellationToken);
+    }
+
+    public async Task UpdateDomainAsync(IEnumerable<string> domains, CancellationToken cancellationToken)
+    {
+        await _dbContext.BlockedDomains.ExecuteDeleteAsync(cancellationToken);
+
+        var newEntities = domains.Select(d => new BlockedDomainModel(d.ToLower().Trim()));
+        await _dbContext.BlockedDomains.AddRangeAsync(newEntities, cancellationToken);
+        await _dbContext.SaveChangesAsync(cancellationToken);
     }
 }
