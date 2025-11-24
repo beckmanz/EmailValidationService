@@ -1,3 +1,4 @@
+using EmailValidationService.Api.Middlewares;
 using EmailValidationService.Application;
 using EmailValidationService.Infrastructure;
 using Scalar.AspNetCore;
@@ -22,6 +23,7 @@ if (app.Environment.IsDevelopment())
     app.MapScalarApiReference();
 }
 
+app.UseMiddleware<GlobalExceptionHandlingMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
